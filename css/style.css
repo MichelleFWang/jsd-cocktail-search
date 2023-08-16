@@ -1,0 +1,79 @@
+body{
+    background-color: #F4F2DE;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    color: #7C9D96;
+    background-color: #E9B384;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    font-size: 4rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    padding: 1rem 1rem;
+    font-family: 'Rubik Vinyl', cursive;
+}
+
+h3 {
+    font-size: 1rem;
+    color: black;
+}
+
+
+button {
+    border-radius: 25%;
+    cursor: pointer;
+    background-color: #A1CCD1;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    border: brown;
+}
+
+
+
+input{
+    width:60%;
+    margin-left: 7rem;
+    
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+    color: #A1CCD1;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img {
+    cursor: pointer;
+    width: 90%;
+    padding: 10px;
+}
+
+#searchResults {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 10px;
+}
+
+.ingredients {
+    border-radius: 0;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    background-color: lightskyblue;
+    margin: 3px;
+    padding: 3px;
+
+    &:focus {
+        background-color: #E9B384;
+        color: white;
+    }
+
+}

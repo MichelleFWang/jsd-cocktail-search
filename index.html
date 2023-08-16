@@ -4,11 +4,47 @@
     <link rel="shortcut icon" href="#">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cocktail Search</title>
-    <script src="js/axios.min.js"></script>
-    <script src="js/main.js"></script>
+    <title>🍹 Home Cocktail Manual</title>
+    <script src="js/axios.min.js" defer></script>
+    <script src="js/main.js" defer></script>    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Cocktail Search</h1>
+    <form id="searchForm">
+        <h1>🍹 Home Cocktail Manual </h1>
+        <h2>Search by Cocktail Name</h2>
+        <input type="text" id="cocktailQuery" placeholder = "Enter a cocktail name">
+        <button>Search</button>
+        <button id="backButton">Back</button>
+    </form>
+    <div id="searchIngredients">
+        <h2>What can I make with these ingredients...</h2>
+        <h4>Choose my spirits:</h3>
+            <button class="ingredients" id="Vodka">Vodka</button>
+            <button class="ingredients" id="Gin">Gin</button>
+            <button class="ingredients" id="Tequila">Tequila</button>
+            <button class="ingredients" id="Cointreau">Cointreau</button>
+            <button class="ingredients" id="Rum">Rum</button>
+            <button class="ingredients" id="Champagne">Champagne</button>
+        <h4>Mixers</h4>
+            <button class="ingredients" id="Lemon">Lemon</button>
+            <button class="ingredients" id="Lemon Juice">Lemon Juice</button>
+            <button class="ingredients" id="Lime">Lime</button>
+            <button class="ingredients" id="Lime Juice">Lime Juice</button>
+            <button class="ingredients" id="Coca-Cola">Coca-Cola</button>
+            <button class="ingredients" id="Orange Juice">Orange Juice</button>
+            <button class="ingredients" id="Tonic Water">Tonic Water</button>
+        <h4>Any other ingredients</h4>
+        <form id="ingredientForm">
+             <input type="text" id="ingredientQuery" placeholder = "Enter an ingredient name">
+            <button>Search</button>
+        </form>
+        <h4>I have chosen:</h4>
+        <h4 id="chosen"></h4>
+    </div>  
+    <div id="searchResults"></div>
+    <div id="cocktailDetails">
+    </div>
+    </body>
 </body>
 </html>
