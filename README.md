@@ -23,4 +23,6 @@ Search by Ingredients:
 Details page:
 <img src="./Images/Details.png"/>
 
-
+More for the future!
+- limited to 20 results per page and next page feature
+- Show favourites leading to details
