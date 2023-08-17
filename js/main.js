@@ -133,6 +133,7 @@ const loadSearchResults = (searchText) => {
 clearButton.addEventListener('click', ev => {
     searchTerms.length=0;
     chosenIngredientsNode.innerHTML = searchTerms;
+    
     // resultsParent.style.display = "grid";
     // cocktailDetails.style.display = "none";
 })
