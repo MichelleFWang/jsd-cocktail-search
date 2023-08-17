@@ -12,7 +12,7 @@ Features:
 
 On the phone:
 
-<img src="./Images/Phone%20version.png" width=200/>
+<img src="./Images/Phone%20version.png" width=300/>
 
 Webpage:
 ![image](./Images/Main%20page.png)
