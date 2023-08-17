@@ -133,7 +133,7 @@ const loadSearchResults = (searchText) => {
 clearButton.addEventListener('click', ev => {
     searchTerms.length=0;
     chosenIngredientsNode.innerHTML = searchTerms;
-    
+
     // resultsParent.style.display = "grid";
     // cocktailDetails.style.display = "none";
 })
@@ -185,8 +185,12 @@ const renderDetailsResults = (results) => {
         imgTag.style.padding = '10px';
         cocktailDetails.appendChild( imgTag );
         
+        const nameDivTag = document.createElement('div');
+        nameDivTag.innerHTML = drinks.strDrink;
+        nameDivTag.style.fontWeight=' bold';
+        cocktailDetails.appendChild( nameDivTag );
+
         const divTag = document.createElement('div');
-        divTag.innerHTML = drinks.strDrink;
         divTag.innerHTML = 'Instructions: '+ drinks.strInstructions;
         divTag.dataset.cocktailId = drinks.idDrink;
         cocktailDetails.appendChild( divTag );
