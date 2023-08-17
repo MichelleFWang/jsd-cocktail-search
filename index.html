@@ -5,18 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🍹 Home Cocktail Manual</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="js/axios.min.js" defer></script>
     <script src="js/main.js" defer></script>    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="showFavourites">
+        Show My Favourites
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">My Favourites</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <p id="a">Hello</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <a href="index.html" class='home' id="home">Home</a>
     <form id="searchForm">
         <h1>🍹 Home Cocktail Manual </h1>
         <h2>Search by Cocktail Name</h2>
         <input type="text" id="cocktailQuery" placeholder = "Enter a cocktail name">
-        <button>Search</button>
+        <button id="searchButton">Search</button>
         <button id="backButton">Back</button>
     </form>
+    <br>
+    <hr>
     <div id="searchIngredients">
         <h2>What can I make with these ingredients...</h2>
         <h4>Choose my spirits:</h3>
@@ -28,23 +54,27 @@
             <button class="ingredients" id="Champagne">Champagne</button>
         <h4>Mixers</h4>
             <button class="ingredients" id="Lemon">Lemon</button>
-            <button class="ingredients" id="Lemon Juice">Lemon Juice</button>
+            <button class="ingredients" id="Salt">Salt</button>
             <button class="ingredients" id="Lime">Lime</button>
-            <button class="ingredients" id="Lime Juice">Lime Juice</button>
+            <button class="ingredients" id="Iced tea">Iced tea</button>
+            <button class="ingredients" id="Coffee">Coffee</button>
             <button class="ingredients" id="Coca-Cola">Coca-Cola</button>
             <button class="ingredients" id="Orange Juice">Orange Juice</button>
             <button class="ingredients" id="Tonic Water">Tonic Water</button>
         <h4>Any other ingredients</h4>
         <form id="ingredientForm">
              <input type="text" id="ingredientQuery" placeholder = "Enter an ingredient name">
-            <button>Search</button>
+            <button id="searchButton">Search</button>
+            <button id="clear">Clear</button>
         </form>
         <h4>I have chosen:</h4>
         <h4 id="chosen"></h4>
     </div>  
     <div id="searchResults"></div>
     <div id="cocktailDetails">
+        <button id = "favourite">Add favourite</button>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </body>
 </html>
